@@ -4,6 +4,7 @@
 
 Vanilla JS + Express.js + MySQL로 진행하는 풀스택 스터디 레포지토리입니다. <br/>
 우리 스터디는 P-1과 P-2로 구성되어 있습니다. <br/>
+P-1과 P-2는 브랜치로 관리합니다.
 
 멘토: 여인수 **[insu12021202](https://github.com/insu12021202)**  <br/>
 멘티: 박준형 
@@ -22,18 +23,6 @@ Vanilla JS + Express.js + MySQL로 진행하는 풀스택 스터디 레포지토
 - MySQL을 통한 데이터베이스 구축
 
 학습을 하여 성장할 계획입니다! 🔥 🔥
-
----
-
-## P-1
-
-- [디자인 및 기획서](https://www.figma.com/file/FMcTfiuDucOpEs2j6fh3XL/2022-Ajou-Beginner-Project-1-1?node-id=1%3A2)
-
-- [Figma 사용법](https://slash-amaranthus-65c.notion.site/Figma-c1dead5d929d44498e94641f8058e10d)
-
-- [프로젝트 조건](https://slash-amaranthus-65c.notion.site/P-1-0f22a61c074f4a86a57e01acdb8f3457)
-
-- [Git 사용법](https://github.com/code-squad/codesquad-docs/blob/master/codereview/README.md)
 
 ---
 
