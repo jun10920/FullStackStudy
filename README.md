@@ -1,6 +1,4 @@
-# 🤗 FullStack Study - Vanilla JS + Express + MySQL 
-
-## P-1
+# 🤗 P-1
 
 - [디자인 및 기획서](https://www.figma.com/file/FMcTfiuDucOpEs2j6fh3XL/2022-Ajou-Beginner-Project-1-1?node-id=1%3A2)
 
