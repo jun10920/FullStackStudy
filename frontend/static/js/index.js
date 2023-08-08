@@ -1,3 +1,6 @@
+import Dashboard from "./views/Dashboard.js";
+import Posts from "./views/Posts.js";
+import Setting from "./views/Setting.js";
 // frontend/static/js/index.js
 
 const navigateTo = (url) => {
@@ -7,9 +10,9 @@ const navigateTo = (url) => {
 
 const router = async () => {
     const routes = [
-        { path: "/", view: () => console.log("Viewing Home") },
-        { path: "/posts", view: () => console.log("Viewing Posts") },
-        { path: "/settings", view: () => console.log("Viewing Settings") },
+        { path: "/", view: Dashboard },
+        { path: "/posts", view: Posts },
+        { path: "/settings", view: Setting },
     ];
 
     // test
@@ -32,11 +35,18 @@ const router = async () => {
         };
     }
 
+    console.log("match", match);
+    const view = new match.route.view();
+
+    document.querySelector("#app").innerHTML = await view.getHtml();
+
     console.log(match);
 };
 
+// 뒤로 가기, 앞으로 가기, 새로고침 시 router 함수 호출
 window.addEventListener("popstate", router);
 
+// data-link가 걸려있는 a tag 클릭 시 navigate 후 router 함수 호출
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", (e) => {
         if (e.target.matches("[data-link]")) {
