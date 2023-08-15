@@ -13,19 +13,15 @@ body {
   height: 588px;
   box-shadow: 1px 1px 5px 1px;
 }
-aside,
-main,
-footer {
-  position: relative;
-}
 
-aside,
-main,
-footer {
-  z-index: 0;
-}
-section {
-  z-index: 1;
+.hamburger-click {
+  display: inline-block;
+  height: 528px;
+  width: 178px;
+  background: #cfdaff;
+  flex-shrink: 0;
+  position: fixed;
+  top: 60px;
 }
 
 header {
