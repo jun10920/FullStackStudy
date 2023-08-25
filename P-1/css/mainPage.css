@@ -100,8 +100,8 @@ header {
   height: 528px;
   width: 178px;
   background: #cfdaff;
-  flex-shrink: 0;
-  /* position: fixed; */
+
+  position: fixed;
   top: 60px;
 }
 

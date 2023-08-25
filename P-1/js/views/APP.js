@@ -21,23 +21,23 @@ class App {
     this.$body.appendChild(main);
 
     // render page
-    const homePage = new HomePage(main);
-    const signupPage = new SignupPage(main);
-    const notFoundPage = new NotFoundPage(main);
+    // // const homePage = new HomePage(main);
+    // const signupPage = new SignupPage(main);
+    // const notFoundPage = new NotFoundPage(main);
     const renderPage = (pathname) => {
       //   // init main
       //   main.firstChild?.remove();
       // switch page rendering
-      switch (pathname) {
-        case '/':
-          homePage.render();
-          break;
-        case '/signup':
-          signupPage.render();
-          break;
-        default:
-          notFoundPage.render();
-      }
+      //   switch (pathname) {
+      //     case '/':
+      //       homePage.render();
+      //       break;
+      //     case '/signup':
+      //       signupPage.render();
+      //       break;
+      //     default:
+      //       notFoundPage.render();
+      //   }
     };
 
     // init rendering
