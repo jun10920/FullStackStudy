@@ -1,5 +1,6 @@
 // import { setPersonalInfo } from '../components/Storage.js';
 import Header from './Header.js';
+import Mainpage from './mainpage.js';
 // import HomePage from './HomePage.js';
 // import SignupPage from './SignupPage.js';
 // import NotFoundPage from './NotFound.js';
@@ -17,11 +18,13 @@ class App {
 
     // main
     const main = document.createElement('main');
-    main.setAttribute('id', 'page_content');
+    main.setAttribute('class', 'page_content');
     this.$body.appendChild(main);
 
     // render page
-    // // const homePage = new HomePage(main);
+    const mainpage = new Mainpage(main);
+    mainpage.render();
+
     // const signupPage = new SignupPage(main);
     // const notFoundPage = new NotFoundPage(main);
     const renderPage = (pathname) => {

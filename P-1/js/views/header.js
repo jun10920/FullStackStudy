@@ -38,21 +38,18 @@ class Header {
     let boardList = [
       { title: '자유게시판', url: 'free' },
       { title: '비밀게시판', url: 'secret' },
-      { title: '정보게시판', url: 'secret' },
-      { title: '홍보게시판', url: 'secret' },
-      { title: 'SW게시판', url: 'secret' },
+      { title: '정보게시판', url: 'information' },
+      { title: '홍보게시판', url: 'promotion' },
+      { title: 'SW게시판', url: 'software' },
     ];
     // hamburgerBtn click 슬라이드
     const hamburger_click = document.createElement('section');
     hamburger_click.setAttribute('class', 'hamburger-click');
     const unorderdList = document.createElement('ul');
-    // const hamburger_btn_list = boardList.map((item) =>
-    //   this.createListButton(item.title)
-    // );
+
     const hamburger_btn_boardlist = boardList.map((board) =>
       this.createListButton(board.title)
     );
-
     //header 요소들 연결
     header.appendChild(hearder_left);
     header.appendChild(header_main);
