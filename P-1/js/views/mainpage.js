@@ -20,12 +20,15 @@ class Mainpage {
     return mainpage_ul;
   }
   createMainpage_footer() {
+    const mainpage_footer_ul = document.createElement('ul');
     for (var i = 1; i < 10; i++) {
       const list = document.createElement('li');
       const button = document.createElement('button');
       button.appendChild(document.createTextNode(i));
       list.appendChild(button);
+      mainpage_footer_ul.appendChild(list);
     }
+    return mainpage_footer_ul;
   }
 
   mainPost = [
@@ -95,10 +98,14 @@ class Mainpage {
     mainpage_listBox.appendChild(mainList);
     this.$body.appendChild(mainpage_listBox);
 
-    // // mainpage footer
-    // const mainpage_footer_ul = document.createElement('ul');
-    // const mainpage_footer_li = this.createMainpage_footer();
-    // mainpage_footer_ul.appendChild(mainpage_footer_li);
+    // mainpage footer
+    const mainpage_footer = this.createMainpage_footer();
+
+    // mainpage footer 연결
+    const mainpage_footerBox = document.createElement('div');
+    mainpage_footerBox.setAttribute('class', 'mainpage__footer-box');
+    this.$body.appendChild(mainpage_footerBox);
+    mainpage_footerBox.appendChild(mainpage_footer);
   }
 }
 
