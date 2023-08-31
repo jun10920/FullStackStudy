@@ -1,6 +1,6 @@
 class Mainpage {
-  constructor($body) {
-    this.$body = $body;
+  constructor($main) {
+    this.$main = $main;
   }
   createMainList() {
     const mainpage_ul = document.createElement('ul');
@@ -88,7 +88,7 @@ class Mainpage {
     // mainpage header 연결
     mainpage_header.appendChild(mainpage_header_name);
     mainpage_header.appendChild(mainpage_header_registerBtn);
-    this.$body.appendChild(mainpage_header);
+    this.$main.appendChild(mainpage_header);
     // mainpage list
     const mainList = this.createMainList();
     mainList.setAttribute('class', 'mainPage');
@@ -96,7 +96,7 @@ class Mainpage {
     const mainpage_listBox = document.createElement('div');
     mainpage_listBox.setAttribute('class', 'mainPageListBox');
     mainpage_listBox.appendChild(mainList);
-    this.$body.appendChild(mainpage_listBox);
+    this.$main.appendChild(mainpage_listBox);
 
     // mainpage footer
     const mainpage_footer = this.createMainpage_footer();
@@ -104,7 +104,7 @@ class Mainpage {
     // mainpage footer 연결
     const mainpage_footerBox = document.createElement('div');
     mainpage_footerBox.setAttribute('class', 'mainpage__footer-box');
-    this.$body.appendChild(mainpage_footerBox);
+    this.$main.appendChild(mainpage_footerBox);
     mainpage_footerBox.appendChild(mainpage_footer);
   }
 }

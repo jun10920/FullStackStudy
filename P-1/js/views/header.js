@@ -67,26 +67,24 @@ class Header {
     hearder_left.addEventListener('click', () => {
       hamburger_click.classList.toggle('blind');
     });
+
+    // HOME 메뉴 클릭 이벤트
+    header_main.addEventListener('click', () => {
+      window.history.pushState('', '', '/');
+      const urlChange = new CustomEvent('urlchange', {
+        detail: { href: '/' },
+      });
+      document.dispatchEvent(urlChange);
+    });
+
+    // Log In 메뉴 클릭 이벤트
+    header_right.addEventListener('click', () => {
+      window.history.pushState('', '', '/login');
+      const urlChange = new CustomEvent('urlchange', {
+        detail: { href: '/login' },
+      });
+      document.dispatchEvent(urlChange);
+    });
   }
-
-  // render() {
-  //   // HOME 메뉴 클릭 이벤트
-  //   home_menu.addEventListener('click', () => {
-  //     window.history.pushState('', '', '/');
-  //     const urlChange = new CustomEvent('urlchange', {
-  //       detail: { href: '/' },
-  //     });
-  //     document.dispatchEvent(urlChange);
-  //   });
-
-  //   // SIGNUP 메뉴 클릭 이벤트
-  //   signup_menu.addEventListener('click', () => {
-  //     window.history.pushState('', '', '/signup');
-  //     const urlChange = new CustomEvent('urlchange', {
-  //       detail: { href: '/signup' },
-  //     });
-  //     document.dispatchEvent(urlChange);
-  //   });
-  // }
 }
 export default Header;

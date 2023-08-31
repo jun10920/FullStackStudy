@@ -20,6 +20,8 @@ body {
 
 /* GNB */
 header {
+  position: absolute;
+  bottom: 528px;
   display: flex;
   align-items: center;
   width: 501px;
